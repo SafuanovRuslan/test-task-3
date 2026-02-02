@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Bernierdi';
-  src: url('/fonts/BERNIERDISTRESSED-REGULAR.OTF') format('opentype');
+  src: url('../fonts/BERNIERDISTRESSED-REGULAR.OTF') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@ hr {
 
 .head {
     padding: 64px 0 70px;
-    background-image: url('/img/bg head.jpg');
+    background-image: url('../img/bg head.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -103,7 +103,7 @@ hr {
     width: 192px;
     height: 100px;
     padding: 0  24px;
-    background-image: url('/img/d.png');
+    background-image: url('../img/d.png');
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,7 +128,7 @@ hr {
 
 .course__media-body {
     padding: 6%;
-    background-image: url('/img/bg.jpg');
+    background-image: url('../img/bg.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -221,7 +221,7 @@ hr {
 
 .tarifs {
     padding: 100px 0;
-    background-image: url('/img/bg tarif.jpg');
+    background-image: url('../img/bg tarif.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -285,7 +285,6 @@ hr {
 
 .tarifs__currencies button {
     background: #FFD6B6;
-    /* background: linear-gradient(90deg, rgba(254, 138, 49, 1) 0%, rgba(218, 120, 93, 1) 100%); */
     border: none;
 }
 
