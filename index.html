@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>test-task</title>
+
+        <link rel="stylesheet" href="/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/style/main.css">
+        <script src="/js/jquery-3.5.1.js"></script>
+        <script src="/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button"
+                        data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ml-5">
+                            <a class="nav-link text-dark" href="#">О чем курс?</a>
+                        </li>
+                        <li class="nav-item ml-5">
+                            <a class="nav-link text-dark" href="#tarifs">Записаться на курс</a>
+                        </li>
+                        <li class="nav-item ml-5">
+                            <a class="nav-link text-dark" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto nav-icons">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="/img/icons/tg.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="/img/icons/pin.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="head">
+            <div class="container">
+                <div class="media head__media">
+                    <div class="media-body head__media-body">
+                        <h1 class="head__heading mb-0">
+                            <span class="big">ПЕТЕРБУРГ</span><br>
+                            <span class="small">сквозь года</span>
+                        </h1>
+                        <h2 class="head__subheading mb-5">с владимиром Заруцким</h2>
+                        <div class="head__description mb-5">
+                            <ul class="head__list">
+                                <li class="head__description-item mb-2">Нарисуйте <span class="highlighted">12 пейзажей</span>: от ретро Петербурга до сегодняшних дней</li>
+                                <li class="head__description-item mb-2">Изучите <span class="highlighted">способы передачи особенностей архитектуры</span> с помощью акварели</li>
+                                <li class="head__description-item">Научитесь передавать <span class="highlighted">художественные образы и замыслы</span></li>
+                            </ul>
+                        </div>
+                        <a href="#course" class="btn btn-secondary head__button">УЗНАТЬ ПОДРОБНОСТИ</a>
+                    </div>
+                    <img src="/img/img-2x-scale-2_00x.png" class="align-self-center" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="train">
+            <div class="container">
+                <div class="train-item">
+                    <span><span class="highlighted">Материал:</span> акварель</span>
+                </div>
+                <div class="train-item">
+                    <span><span class="highlighted">Количество картин:</span> 12</span>
+                </div>
+                <div class="train-item">
+                    <span><span class="highlighted">Продолжительность курса:</span> 20 часов</span>
+                </div>
+                <div class="train-item">
+                    <span><span class="highlighted">Доступ:</span> бессрочный</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="course" class="course">
+            <div class="container">
+                <div class="media course__media">
+                    <div class="media-body align-self-center course__media-body">
+                        <h1 class="course__heading mb-4">Для кого будет полезен курс</h1>
+                        <p class="course__description">
+                            На моем курсе «Петербург сквозь года с Владимиром Заруцким» 
+                            вы научитесь рисовать акварелью городские пейзажи. 
+                            Этот курс для тех, кто хочет <span class="highlighted">научиться или усовершенствовать 
+                            свои навыки в акварели</span>. Уверен, вам понравится!
+                        </p>
+                    </div>
+                    <img src="/img/img-2x-scale-2_00x.jpg" class="align-self-center" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="materials">
+            <div class="container">
+                <h1 class="materials__heading mb-5">Материалы на курс</h1>
+                <div class="container materials__box">
+                    <div class="card materials__card">
+                        <img src="/img/1.png" class="card-img-top" alt="">
+                        <div class="card-body materials__body">
+                            <div class="card-title materials__title">
+                                <span class="highlighted">Краски</span>
+                            </div>
+                            <div class="materials__colors-group">
+                                <div class="materials__colors-btn-wrapper">
+                                    <button id="colors" class="materials__colors-btn">СПИСОК КРАСОК</button>
+                                </div>
+                                <div id="colorsList" class="materials__colors-list hidden">
+                                    <ul>
+                                        <li>Кобальт лазурно-голубой</li>
+                                        <li>Горизонт синий</li>
+                                        <li>Кобальт бирюзовый</li>
+                                        <li>Церулеум</li>
+                                        <li>Сиена натуральная</li>
+                                        <li>Охра красная</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Сиена жженая</li>
+                                        <li>Пиррол оранжевый</li>
+                                        <li>Кадмий красный светлый</li>
+                                        <li>Опера</li>
+                                        <li>Кобальт</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card materials__card">
+                        <img src="/img/2.png" class="card-img-top" alt="">
+                        <div class="card-body materials__body">
+                            <div class="card-title materials__title">
+                                <span class="highlighted">Кисти</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card materials__card">
+                        <img src="/img/3.png" class="card-img-top" alt="">
+                        <div class="card-body materials__body">
+                            <div class="card-title materials__title">
+                                <span class="highlighted">Бумага</span>
+                            </div>
+                            <div class="materials__hint">300гр/м, хлопок Saunders Waterford, Палаццо</div>
+                        </div>
+                    </div>
+                    <div class="card materials__card">
+                        <img src="/img/4.png" class="card-img-top" alt="">
+                        <div class="card-body materials__body">
+                            <div class="card-title materials__title">
+                                <span class="highlighted">Карандаш 2В, 3В</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="materials__bottom">Всё это рекомендации, не обязательно использовать то же самое!</div>
+            </div>
+        </div>
+
+        <div id="tarifs" class="tarifs">
+            <h1 class="tarifs__heading mb-5">Тарифы</h1>
+            <div class="container">
+                <div class="card tarifs__card">
+                    <h4 class="card-title tarifs__title">РИСУЮ САМ</h4>
+                    <img src="/img/tarif.png" class="card-img-top" alt="...">
+                    <div class="card-body tarifs__body">
+                        <ul class="tarifs__features mb-4">
+                            <li class="tarifs__feature mb-3">12 пейзажей: от ретро Петербурга до сегодняшних дней</li>
+                            <li class="tarifs__feature mb-3">17 уроков : теория + практика + развивающие упражнения</li>
+                            <li class="tarifs__feature mb-3 disabled">Личная часовая онлайн-консультация с экспертом курса</li>
+                        </ul>
+                        <div class="tarifs__old-price mb-3" data-price="7990">7 990 ₽</div>
+                        <div class="tarifs__new-price mb-4" data-price="4990">4 990 ₽</div>
+                        <div class="tarifs__currencies d-flex justify-content-center mb-4">
+                            <button type="button" class="currency-btn btn btn-secondary active">₽</button>
+                            <button type="button" class="currency-btn btn btn-secondary">$</button>
+                        </div>
+                        <button type="button" class="btn btn-secondary tarifs__button mb-2">ПРИНЯТЬ УЧАСТИЕ</button>
+                    </div>
+                </div>
+                <div class="card tarifs__card">
+                    <h4 class="card-title tarifs__title">С ПОДДЕРЖКОЙ</h4>
+                    <img src="/img/tarif.png" class="card-img-top" alt="...">
+                    <div class="card-body tarifs__body">
+                        <ul class="tarifs__features mb-4">
+                            <li class="tarifs__feature mb-3">12 пейзажей: от ретро Петербурга до сегодняшних дней</li>
+                            <li class="tarifs__feature mb-3">17 уроков : теория + практика + развивающие упражнения</li>
+                            <li class="tarifs__feature mb-3 disabled">Личная часовая онлайн-консультация с экспертом курса</li>
+                            <li class="tarifs__feature mb-3"> 
+                                <img src="/img/coin.svg" alt="" width="24px">
+                                +1000 бонусных рублей! Можно потратить при покупке курса 
+                                на следующем марафоне. Сгорают через 3 месяца
+                            </li>
+                        </ul>
+                        <div class="tarifs__old-price mb-3" data-price="9990">9 990 ₽</div>
+                        <div class="tarifs__new-price mb-4" data-price="5990">5 990 ₽</div>
+                        <div class="tarifs__currencies d-flex justify-content-center mb-4">
+                            <button type="button" class="currency-btn btn btn-secondary active">₽</button>
+                            <button type="button" class="currency-btn btn btn-secondary">$</button>
+                        </div>
+                        <button type="button" class="btn btn-secondary tarifs__button mb-2">ПРИНЯТЬ УЧАСТИЕ</button>
+                    </div>
+                </div>
+                <div class="card tarifs__card">
+                    <h4 class="card-title tarifs__title">VIP</h4>
+                    <img src="/img/tarif2.png" class="card-img-top" alt="...">
+                    <div class="card-body tarifs__body">
+                        <ul class="tarifs__features mb-4">
+                            <li class="tarifs__feature mb-3">12 пейзажей: от ретро Петербурга до сегодняшних дней</li>
+                            <li class="tarifs__feature mb-3">17 уроков : теория + практика + развивающие упражнения</li>
+                            <li class="tarifs__feature mb-3">Личная часовая онлайн-консультация с экспертом курса</li>
+                        </ul>
+                        <div class="tarifs__old-price mb-3" data-price="22980">22 980 ₽</div>
+                        <div class="tarifs__new-price mb-4" data-price="15990">15 990 ₽</div>
+                        <div class="tarifs__currencies d-flex justify-content-center mb-4">
+                            <button type="button" class="currency-btn btn btn-secondary active">₽</button>
+                            <button type="button" class="currency-btn btn btn-secondary">$</button>
+                        </div>
+                        <button type="button" class="btn btn-secondary tarifs__button mb-2">ПРИНЯТЬ УЧАСТИЕ</button>
+                    </div>
+                </div>
+
+                <div id="carouselTarifs" class="carousel slide" data-interval="false" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card tarifs__card d-block">
+                                <h4 class="card-title tarifs__title">РИСУЮ САМ</h4>
+                                <img src="/img/tarif.png" class="card-img-top" alt="...">
+                                <div class="card-body tarifs__body">
+                                    <ul class="tarifs__features mb-4">
+                                        <li class="tarifs__feature mb-3">12 пейзажей: от ретро Петербурга до сегодняшних дней</li>
+                                        <li class="tarifs__feature mb-3">17 уроков : теория + практика + развивающие упражнения</li>
+                                        <li class="tarifs__feature mb-3 disabled">Личная часовая онлайн-консультация с экспертом курса</li>
+                                    </ul>
+                                    <div class="tarifs__old-price mb-3" data-price="7990">7 990 ₽</div>
+                                    <div class="tarifs__new-price mb-4" data-price="4990">4 990 ₽</div>
+                                    <div class="tarifs__currencies d-flex justify-content-center mb-4">
+                                        <button type="button" class="currency-btn btn btn-secondary active">₽</button>
+                                        <button type="button" class="currency-btn btn btn-secondary">$</button>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary tarifs__button mb-2">ПРИНЯТЬ УЧАСТИЕ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card tarifs__card d-block">
+                                <h4 class="card-title tarifs__title">С ПОДДЕРЖКОЙ</h4>
+                                <img src="/img/tarif.png" class="card-img-top" alt="...">
+                                <div class="card-body tarifs__body">
+                                    <ul class="tarifs__features mb-4">
+                                        <li class="tarifs__feature mb-3">12 пейзажей: от ретро Петербурга до сегодняшних дней</li>
+                                        <li class="tarifs__feature mb-3">17 уроков : теория + практика + развивающие упражнения</li>
+                                        <li class="tarifs__feature mb-3 disabled">Личная часовая онлайн-консультация с экспертом курса</li>
+                                        <li class="tarifs__feature mb-3"> 
+                                            <img src="/img/coin.svg" alt="" width="24px">
+                                            +1000 бонусных рублей! Можно потратить при покупке курса 
+                                            на следующем марафоне. Сгорают через 3 месяца
+                                        </li>
+                                    </ul>
+                                    <div class="tarifs__old-price mb-3" data-price="9990">9 990 ₽</div>
+                                    <div class="tarifs__new-price mb-4" data-price="5990">5 990 ₽</div>
+                                    <div class="tarifs__currencies d-flex justify-content-center mb-4">
+                                        <button type="button" class="currency-btn btn btn-secondary active">₽</button>
+                                        <button type="button" class="currency-btn btn btn-secondary">$</button>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary tarifs__button mb-2">ПРИНЯТЬ УЧАСТИЕ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card tarifs__card d-block">
+                                <h4 class="card-title tarifs__title">VIP</h4>
+                                <img src="/img/tarif2.png" class="card-img-top" alt="...">
+                                <div class="card-body tarifs__body">
+                                    <ul class="tarifs__features mb-4">
+                                        <li class="tarifs__feature mb-3">12 пейзажей: от ретро Петербурга до сегодняшних дней</li>
+                                        <li class="tarifs__feature mb-3">17 уроков : теория + практика + развивающие упражнения</li>
+                                        <li class="tarifs__feature mb-3">Личная часовая онлайн-консультация с экспертом курса</li>
+                                    </ul>
+                                    <div class="tarifs__old-price mb-3" data-price="22980">22 980 ₽</div>
+                                    <div class="tarifs__new-price mb-4" data-price="15990">15 990 ₽</div>
+                                    <div class="tarifs__currencies d-flex justify-content-center mb-4">
+                                        <button type="button" class="currency-btn btn btn-secondary active">₽</button>
+                                        <button type="button" class="currency-btn btn btn-secondary">$</button>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary tarifs__button mb-2">ПРИНЯТЬ УЧАСТИЕ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselTarifs" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselTarifs" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="container">
+                <h1 class="faq__heading mb-5">Частые вопросы</h1>
+                <div class="accordion faq__accordion mb-4" id="accordionFirst">
+                    <div class="card">
+                        <div class="card-header faq__card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left faq__button collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span>Я совсем не умею рисовать. Стоит ли мне идти на курс?</span>
+                                <span class="accordion-arrow"><img src="/img/arrow.svg" alt="" width="28px"></span>
+                            </button>
+                        </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFirst">
+                            <div class="card-body faq__card-body">
+                                <p>
+                                    Конечно стоит! Курс специально построен так что сначала идут простые картины, а потом 
+                                    более сложные, так что вы успеете влиться в процесс и достичь высоких результатов!
+                                </p>
+                                <p>
+                                    Для опытных художников курс также будет полезен. Вы сможете ещё больше 
+                                    отработать технику, а также увеличить свою насмотренность.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion faq__accordion" id="accordionSecond">
+                    <div class="card">
+                        <div class="card-header faq__card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left faq__button collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                <span>Как устроена обратная связь?</span>
+                                <span class="accordion-arrow"><img src="/img/arrow.svg" alt="" width="28px"></span>
+                            </button>
+                        </h2>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSecond">
+                            <div class="card-body faq__card-body">
+                                <p>
+                                    В конце урока вы выложите фотографию своей работы. У преподавателя будет возможность оставить 
+                                    к вашей работе текстовый, графический (пометки на рисунке), а также аудио-комментарий.
+                                </p>
+                                <p>
+                                    В нижней части каждого урока будет блок комментариев, где можно задавать любые вопросы по обучению.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="help">
+            <img src="/img/help.svg" alt="">
+        </div>
+
+        <footer class="footer">
+            <p>Политика приватности</p>
+            <p>По всем вопросам вы можете писать в службу поддержки:</p>
+            <p>admin@sobakarisovaka.ru</p>
+            <p>© 2025, ИП Косенко Андрей Владимирович, ОГРН 308614728400011</p>
+        </footer>
+    </body>
+</html>
